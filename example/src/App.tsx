@@ -46,7 +46,7 @@ const App = () => {
   }, [])
 
   return (
-    <>
+    <div className='app'>
       <h1>useSoundWaves</h1>
       <Buttons onClick={playFrequency1} />
       <p>{JSON.stringify(player1.currentSound)}</p>
@@ -73,7 +73,7 @@ const App = () => {
       <button onClick={player3.isPlaying ? player3.stop : playFrequency3}>
         {player3.isPlaying ? 'Stop' : 'Play'}
       </button>
-    </>
+    </div>
   )
 }
 export default App
