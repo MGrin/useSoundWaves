@@ -13,12 +13,19 @@ npm install --save use-sound-waves
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { useCallback } from 'react'
 
 import useSoundWaves from 'use-sound-waves'
 
 function Example() {
-  const { isPlaying, currentSound, play, stop } = useSoundWaves();
+  const { isPlaying, currentSound, play, stop } = useSoundWaves()
+
+  const playFrequency = useCallback(() => {
+    play({ frequency: 60 }) // Frequency is given in Hertz
+  }, [])
+  const stop = useCallback(() => {
+    stop()
+  }, [])
   ...
 }
 ```

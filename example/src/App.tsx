@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react'
 
 import useSoundWaves from 'use-sound-waves'
-import 'use-sound-waves/dist/index.css'
 
 type ButtonsProps = {
   onClick: (freq: number) => void
