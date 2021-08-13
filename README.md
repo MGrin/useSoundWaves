@@ -10,6 +10,10 @@
 npm install --save use-sound-waves
 ```
 
+## Example
+
+[https://mgrin.github.io/useSoundWaves/](mgrin.github.io/useSoundWaves)
+
 ## Usage
 
 ```tsx
